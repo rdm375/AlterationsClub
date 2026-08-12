@@ -1,15 +1,15 @@
 /*
- * The Alterations Club - editable site data
+ * Club Alterations - editable site data
  *
  * For routine content changes, start here. Repeated information on the page
  * is generated from this object so you do not have to hunt through HTML.
  */
 window.SITE_DATA = {
   club: {
-    name: "The Alterations Club",
-    shortName: "AC",
+    name: "Club Alterations",
+    shortName: "CA",
     tagline: "A home for recovery & fellowship",
-    description: "The Alterations Club provides a comfortable place for Alcoholics Anonymous meetings, fellowship, service, and recovery."
+    description: "The Club Alterations provides a comfortable place for Alcoholics Anonymous meetings, fellowship, service, and recovery."
   },
 
   address: {
@@ -22,7 +22,7 @@ window.SITE_DATA = {
   contact: {
     phoneDisplay: "(210) 555-0123",
     phoneDial: "+12105550123",
-    email: "hello@TheAlterationsClub-PTX.org"
+    email: "hello@ClubAlterations-PTX.org"
   },
 
   location: {
@@ -31,7 +31,7 @@ window.SITE_DATA = {
     entranceDetail: "On the Red Bluff side of the building",
     parkingTitle: "We ask that you please not park in front of the other businesses when they're open. Car pool when possible.",
     parkingNote: "",
-    parkingDetail: "Please avoid parking in front of the other businesses, if they're open.",
+    parkingDetail: "Please avoid parking in front of the other businesses when they're open.",
     accessibility: "Ramp on the otherside of the church nextdoor."
   },
 
@@ -58,7 +58,7 @@ window.SITE_DATA = {
         date: "2026-08-22",
         title: "Still Sober Group &mdash; Speak and Eat and Bingo",
         time: "4:00 PM &ndash; 8:00 PM",
-        description: "Two Tacos with all the fixings and sides for $10."
+          description: "Two Tacos with all the fixings and sides for $10. Plus a 50:50 raffle!"
       },
       {
         recurrence: { frequency: "monthly", ordinal: "last", weekday: "Wednesday" },
@@ -95,10 +95,10 @@ window.SITE_DATA = {
         { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Sunday God Meeting", chair:"Kyren", language: "English" }
     ],
     Monday: [
-      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", chair: "", language: "English" }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", chair: "Tyler", language: "English" }
     ],
     Tuesday: [
-      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", chair: "", language: "English"  }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", chair: "Sandra", language: "English"  }
     ],
     Wednesday: [
       { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", chair: "Mitch", language: "English"  }
