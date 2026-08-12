@@ -56,7 +56,7 @@ function meetingMarkup(meeting) {
     <article class="schedule-card">
       <p class="eyebrow">${meeting.time}</p>
       <h3>${meeting.name}</h3>
-      <p>${meeting.room}</p>
+      <p><strong>Chair:</strong> ${meeting.chair}</p>
       <div class="meta">${meeting.type.split(" · ").map(item => `<span class="tag">${item}</span>`).join("")}</div>
     </article>`;
 }

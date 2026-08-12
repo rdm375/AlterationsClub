@@ -37,36 +37,36 @@ window.SITE_DATA = {
 
   meetings: {
     Sunday: [
-      { time: "9:00 AM", name: "Sunday Morning Group", type: "Open · Discussion", room: "Main Room" },
-      { time: "6:00 PM", name: "Alterations Group", type: "Open · Discussion", room: "Main Room" },
-      { time: "8:00 PM", name: "Last Call", type: "Closed · Discussion", room: "Main Room" }
+      { time: "9:00 AM", name: "Sunday Morning Group", type: "Open · Discussion", chair: "TBD" },
+      { time: "6:00 PM", name: "Alterations Group", type: "Open · Discussion", chair: "TBD" },
+      { time: "8:00 PM", name: "Last Call", type: "Closed · Discussion", chair: "TBD" }
     ],
     Monday: [
-      { time: "7:00 AM", name: "Early Birds", type: "Open · Discussion", room: "Main Room" },
-      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", room: "Main Room" },
-      { time: "7:00 PM", name: "Alterations Group", type: "Closed · Literature", room: "Main Room" }
+      { time: "7:00 AM", name: "Early Birds", type: "Open · Discussion", chair: "TBD" },
+      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", chair: "TBD" },
+      { time: "7:00 PM", name: "Alterations Group", type: "Closed · Literature", chair: "TBD" }
     ],
     Tuesday: [
-      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", room: "Main Room" },
-      { time: "6:30 PM", name: "New Beginnings", type: "Open · Newcomer", room: "Side Room" }
+      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", chair: "TBD" },
+      { time: "6:30 PM", name: "New Beginnings", type: "Open · Newcomer", chair: "TBD" }
     ],
     Wednesday: [
-      { time: "7:00 AM", name: "Early Birds", type: "Open · Discussion", room: "Main Room" },
-      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", room: "Main Room" },
-      { time: "7:00 PM", name: "Alterations Group", type: "Open · Speaker", room: "Main Room" }
+      { time: "7:00 AM", name: "Early Birds", type: "Open · Discussion", chair: "TBD" },
+      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", chair: "TBD" },
+      { time: "7:00 PM", name: "Alterations Group", type: "Open · Speaker", chair: "TBD" }
     ],
     Thursday: [
-      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", room: "Main Room" },
-      { time: "7:30 PM", name: "Big Book Study", type: "Closed · Literature", room: "Main Room" }
+      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", chair: "TBD" },
+      { time: "7:30 PM", name: "Big Book Study", type: "Closed · Literature", chair: "TBD" }
     ],
     Friday: [
-      { time: "7:00 AM", name: "Early Birds", type: "Open · Discussion", room: "Main Room" },
-      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", room: "Main Room" },
-      { time: "8:00 PM", name: "Friday Night Fellowship", type: "Open · Discussion", room: "Main Room" }
+      { time: "7:00 AM", name: "Early Birds", type: "Open · Discussion", chair: "TBD" },
+      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", chair: "TBD" },
+      { time: "8:00 PM", name: "Friday Night Fellowship", type: "Open · Discussion", chair: "TBD" }
     ],
     Saturday: [
-      { time: "10:00 AM", name: "Saturday Solutions", type: "Open · Step Study", room: "Main Room" },
-      { time: "7:00 PM", name: "Saturday Speaker", type: "Open · Speaker", room: "Main Room" }
+      { time: "10:00 AM", name: "Saturday Solutions", type: "Open · Step Study", chair: "TBD" },
+      { time: "7:00 PM", name: "Saturday Speaker", type: "Open · Speaker", chair: "TBD" }
     ]
   }
 };
