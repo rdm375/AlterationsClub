@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="The Alterations Club — meeting schedules, directions, events, and recovery resources." />
+  <title>The Alterations Club</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" aria-label="The Alterations Club home">
+        <span class="brand-mark" aria-hidden="true">AC</span>
+        <span>
+          <strong>The Alterations Club</strong>
+          <small>A home for recovery & fellowship</small>
+        </span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#meetings">Meetings</a>
+        <a href="#events">Events</a>
+        <a href="#directions">Directions</a>
+        <a href="#resources">Resources</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Welcome</p>
+          <h1>You are welcome here.</h1>
+          <p class="lede">The Alterations Club provides a comfortable place for Alcoholics Anonymous meetings, fellowship, service, and recovery.</p>
+          <div class="button-row">
+            <a class="button primary" href="#meetings">Find a meeting</a>
+            <a class="button secondary" href="#directions">Get directions</a>
+          </div>
+        </div>
+
+        <aside class="today-card" aria-labelledby="today-title">
+          <p class="eyebrow">Today</p>
+          <h2 id="today-title">Sunday meetings</h2>
+          <div id="today-meetings" class="meeting-list" aria-live="polite"></div>
+          <a class="text-link" href="#meetings">See the full weekly schedule →</a>
+        </aside>
+      </div>
+    </section>
+
+    <section class="quick-strip" aria-label="Quick information">
+      <div class="wrap quick-grid">
+        <div>
+          <span class="quick-label">Location</span>
+          <strong>123 Example Street</strong>
+          <span>San Antonio, TX</span>
+        </div>
+        <div>
+          <span class="quick-label">Entrance</span>
+          <strong>East side of building</strong>
+          <span>Look for the blue door</span>
+        </div>
+        <div>
+          <span class="quick-label">Parking</span>
+          <strong>Free parking</strong>
+          <span>Lot behind the clubhouse</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="meetings">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Meetings</p>
+            <h2>Weekly meeting schedule</h2>
+          </div>
+          <p>Meeting details are kept short and clear so they are easy to read on any device.</p>
+        </div>
+
+        <div class="day-tabs" id="day-tabs" role="tablist" aria-label="Meeting days"></div>
+        <div id="schedule" class="schedule-grid"></div>
+
+        <div class="info-note">
+          <strong>Looking for another meeting?</strong>
+          <p>Use the local A.A. meeting directory or the official Meeting Guide for meetings elsewhere in the area.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="events">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Community calendar</p>
+            <h2>Upcoming events</h2>
+          </div>
+          <p>Club-sponsored activities are separated from events hosted elsewhere in the fellowship.</p>
+        </div>
+
+        <div class="event-columns">
+          <div>
+            <h3>At The Alterations Club</h3>
+            <article class="event-card">
+              <time datetime="2026-08-15"><span>AUG</span><strong>15</strong></time>
+              <div><h4>Speaker Meeting</h4><p>Saturday · 7:00 PM</p><p>Open meeting. Coffee and fellowship afterward.</p></div>
+            </article>
+            <article class="event-card">
+              <time datetime="2026-08-22"><span>AUG</span><strong>22</strong></time>
+              <div><h4>Birthday Night</h4><p>Saturday · 6:30 PM</p><p>Monthly celebration for sobriety anniversaries.</p></div>
+            </article>
+          </div>
+
+          <div>
+            <h3>Around the Fellowship</h3>
+            <article class="event-card muted-card">
+              <time datetime="2026-08-29"><span>AUG</span><strong>29</strong></time>
+              <div><h4>District Workshop</h4><p>Hosted off-site</p><p>Service workshop and fellowship. See organizer details before attending.</p></div>
+            </article>
+            <article class="event-card muted-card">
+              <time datetime="2026-09-12"><span>SEP</span><strong>12</strong></time>
+              <div><h4>Local Club Anniversary</h4><p>Hosted off-site</p><p>Dinner, speaker, and anniversary celebration.</p></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="directions">
+      <div class="wrap directions-grid">
+        <div>
+          <p class="eyebrow">Directions</p>
+          <h2>Easy to find when you need us.</h2>
+          <p class="lede-small">123 Example Street, San Antonio, TX 78xxx</p>
+          <div class="detail-list">
+            <div><strong>Parking</strong><span>Use the free lot behind the building.</span></div>
+            <div><strong>Entrance</strong><span>Enter on the east side through the blue door.</span></div>
+            <div><strong>Accessibility</strong><span>Step-free entrance and accessible restroom.</span></div>
+          </div>
+          <div class="button-row">
+            <a class="button primary" href="https://maps.google.com/?q=123+Example+Street+San+Antonio+TX" target="_blank" rel="noreferrer">Open in Google Maps</a>
+            <a class="button secondary" href="https://maps.apple.com/?q=123+Example+Street+San+Antonio+TX" target="_blank" rel="noreferrer">Open in Apple Maps</a>
+          </div>
+        </div>
+        <div class="building-placeholder" role="img" aria-label="Placeholder for a real photograph of The Alterations Club entrance">
+          <span>Building / entrance photo</span>
+          <small>Use a real exterior photo here so first-time visitors know what to look for.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="resources">
+      <div class="wrap">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Resources</p>
+            <h2>Helpful information and organizations</h2>
+          </div>
+        </div>
+
+        <div class="resource-grid">
+          <a class="resource-card" href="https://www.aa.org/" target="_blank" rel="noreferrer"><strong>Alcoholics Anonymous</strong><span>Official A.A. website, literature, and information</span></a>
+          <a class="resource-card" href="https://www.aa.org/meeting-guide-app" target="_blank" rel="noreferrer"><strong>A.A. Meeting Guide</strong><span>Find meetings outside The Alterations Club</span></a>
+          <a class="resource-card" href="https://al-anon.org/" target="_blank" rel="noreferrer"><strong>Al-Anon & Alateen</strong><span>Support for families and friends</span></a>
+          <a class="resource-card" href="#"><strong>Local treatment resources</strong><span>Detox, treatment, sober living, and community services</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>Questions about the clubhouse?</h2>
+          <p>For meeting-specific questions, contact the group directly when a group contact is listed.</p>
+        </div>
+        <div class="contact-card">
+          <p><strong>Phone</strong><br><a href="tel:+12105550123">(210) 555-0123</a></p>
+          <p><strong>Email</strong><br><a href="mailto:hello@example.org">hello@example.org</a></p>
+          <p><strong>Mail</strong><br>123 Example Street<br>San Antonio, TX 78xxx</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <p><strong>The Alterations Club</strong><br><span>Meeting space for independent Alcoholics Anonymous groups.</span></p>
+      <p class="fine-print">Prototype only. Final site should use the club's actual legal/organizational language and verified meeting information.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-actions" aria-label="Quick actions">
+    <a href="#meetings">Meetings</a>
+    <a href="#directions">Directions</a>
+    <a href="tel:+12105550123">Call</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
