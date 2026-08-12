@@ -1,37 +1,49 @@
-const meetings = {
-  Sunday: [
-    { time: "9:00 AM", name: "Sunday Morning Group", type: "Open · Discussion", room: "Main Room" },
-    { time: "6:00 PM", name: "Alterations Group", type: "Open · Discussion", room: "Main Room" },
-    { time: "8:00 PM", name: "Last Call", type: "Closed · Discussion", room: "Main Room" }
-  ],
-  Monday: [
-    { time: "7:00 AM", name: "Early Birds", type: "Open · Discussion", room: "Main Room" },
-    { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", room: "Main Room" },
-    { time: "7:00 PM", name: "Alterations Group", type: "Closed · Literature", room: "Main Room" }
-  ],
-  Tuesday: [
-    { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", room: "Main Room" },
-    { time: "6:30 PM", name: "New Beginnings", type: "Open · Newcomer", room: "Side Room" }
-  ],
-  Wednesday: [
-    { time: "7:00 AM", name: "Early Birds", type: "Open · Discussion", room: "Main Room" },
-    { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", room: "Main Room" },
-    { time: "7:00 PM", name: "Alterations Group", type: "Open · Speaker", room: "Main Room" }
-  ],
-  Thursday: [
-    { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", room: "Main Room" },
-    { time: "7:30 PM", name: "Big Book Study", type: "Closed · Literature", room: "Main Room" }
-  ],
-  Friday: [
-    { time: "7:00 AM", name: "Early Birds", type: "Open · Discussion", room: "Main Room" },
-    { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", room: "Main Room" },
-    { time: "8:00 PM", name: "Friday Night Fellowship", type: "Open · Discussion", room: "Main Room" }
-  ],
-  Saturday: [
-    { time: "10:00 AM", name: "Saturday Solutions", type: "Open · Step Study", room: "Main Room" },
-    { time: "7:00 PM", name: "Saturday Speaker", type: "Open · Speaker", room: "Main Room" }
-  ]
-};
+const data = window.SITE_DATA;
+
+if (!data) {
+  throw new Error("SITE_DATA is missing. Make sure site-data.js loads before script.js.");
+}
+
+const meetings = data.meetings;
+
+function addressValues() {
+  const { street, city, state, postalCode } = data.address;
+  return {
+    street,
+    cityState: `${city}, ${state}`,
+    cityStatePostal: `${city}, ${state} ${postalCode}`,
+    full: `${street}, ${city}, ${state} ${postalCode}`
+  };
+}
+
+function getValue(path) {
+  if (path.startsWith("address.")) {
+    return addressValues()[path.split(".")[1]];
+  }
+  return path.split(".").reduce((value, key) => value?.[key], data);
+}
+
+function applySiteData() {
+  document.querySelectorAll("[data-site]").forEach(element => {
+    const value = getValue(element.dataset.site);
+    if (value !== undefined && value !== null) element.textContent = value;
+  });
+
+  const encodedAddress = encodeURIComponent(addressValues().full);
+  const links = {
+    phone: `tel:${data.contact.phoneDial}`,
+    email: `mailto:${data.contact.email}`,
+    googleMaps: `https://www.google.com/maps/search/?api=1&query=${encodedAddress}`,
+    appleMaps: `https://maps.apple.com/?q=${encodedAddress}`
+  };
+
+  document.querySelectorAll("[data-site-link]").forEach(element => {
+    const href = links[element.dataset.siteLink];
+    if (href) element.href = href;
+  });
+}
+
+applySiteData();
 
 const days = Object.keys(meetings);
 const tabs = document.querySelector("#day-tabs");

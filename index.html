@@ -13,10 +13,10 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="The Alterations Club home">
-        <span class="brand-mark" aria-hidden="true">AC</span>
+        <span class="brand-mark" aria-hidden="true" data-site="club.shortName"></span>
         <span>
-          <strong>The Alterations Club</strong>
-          <small>A home for recovery & fellowship</small>
+          <strong data-site="club.name"></strong>
+          <small data-site="club.tagline"></small>
         </span>
       </a>
       <nav aria-label="Primary navigation">
@@ -35,7 +35,7 @@
         <div>
           <p class="eyebrow">Welcome</p>
           <h1>You are welcome here.</h1>
-          <p class="lede">The Alterations Club provides a comfortable place for Alcoholics Anonymous meetings, fellowship, service, and recovery.</p>
+          <p class="lede" data-site="club.description"></p>
           <div class="button-row">
             <a class="button primary" href="#meetings">Find a meeting</a>
             <a class="button secondary" href="#directions">Get directions</a>
@@ -55,18 +55,18 @@
       <div class="wrap quick-grid">
         <div>
           <span class="quick-label">Location</span>
-          <strong>123 Example Street</strong>
-          <span>San Antonio, TX</span>
+          <strong data-site="address.street"></strong>
+          <span data-site="address.cityState"></span>
         </div>
         <div>
           <span class="quick-label">Entrance</span>
-          <strong>East side of building</strong>
-          <span>Look for the blue door</span>
+          <strong data-site="location.entranceTitle"></strong>
+          <span data-site="location.entranceNote"></span>
         </div>
         <div>
           <span class="quick-label">Parking</span>
-          <strong>Free parking</strong>
-          <span>Lot behind the clubhouse</span>
+          <strong data-site="location.parkingTitle"></strong>
+          <span data-site="location.parkingNote"></span>
         </div>
       </div>
     </section>
@@ -134,15 +134,15 @@
         <div>
           <p class="eyebrow">Directions</p>
           <h2>Easy to find when you need us.</h2>
-          <p class="lede-small">123 Example Street, San Antonio, TX 78xxx</p>
+          <p class="lede-small" data-site="address.full"></p>
           <div class="detail-list">
-            <div><strong>Parking</strong><span>Use the free lot behind the building.</span></div>
-            <div><strong>Entrance</strong><span>Enter on the east side through the blue door.</span></div>
-            <div><strong>Accessibility</strong><span>Step-free entrance and accessible restroom.</span></div>
+            <div><strong>Parking</strong><span data-site="location.parkingDetail"></span></div>
+            <div><strong>Entrance</strong><span data-site="location.entranceDetail"></span></div>
+            <div><strong>Accessibility</strong><span data-site="location.accessibility"></span></div>
           </div>
           <div class="button-row">
-            <a class="button primary" href="https://maps.google.com/?q=123+Example+Street+San+Antonio+TX" target="_blank" rel="noreferrer">Open in Google Maps</a>
-            <a class="button secondary" href="https://maps.apple.com/?q=123+Example+Street+San+Antonio+TX" target="_blank" rel="noreferrer">Open in Apple Maps</a>
+            <a class="button primary" href="#" data-site-link="googleMaps" target="_blank" rel="noreferrer">Open in Google Maps</a>
+            <a class="button secondary" href="#" data-site-link="appleMaps" target="_blank" rel="noreferrer">Open in Apple Maps</a>
           </div>
         </div>
         <div class="building-placeholder" role="img" aria-label="Placeholder for a real photograph of The Alterations Club entrance">
@@ -178,9 +178,9 @@
           <p>For meeting-specific questions, contact the group directly when a group contact is listed.</p>
         </div>
         <div class="contact-card">
-          <p><strong>Phone</strong><br><a href="tel:+12105550123">(210) 555-0123</a></p>
-          <p><strong>Email</strong><br><a href="mailto:hello@example.org">hello@example.org</a></p>
-          <p><strong>Mail</strong><br>123 Example Street<br>San Antonio, TX 78xxx</p>
+          <p><strong>Phone</strong><br><a href="#" data-site-link="phone" data-site="contact.phoneDisplay"></a></p>
+          <p><strong>Email</strong><br><a href="#" data-site-link="email" data-site="contact.email"></a></p>
+          <p><strong>Mail</strong><br><span data-site="address.street"></span><br><span data-site="address.cityStatePostal"></span></p>
         </div>
       </div>
     </section>
@@ -188,7 +188,7 @@
 
   <footer>
     <div class="wrap footer-grid">
-      <p><strong>The Alterations Club</strong><br><span>Meeting space for independent Alcoholics Anonymous groups.</span></p>
+      <p><strong data-site="club.name"></strong><br><span>Meeting space for independent Alcoholics Anonymous groups.</span></p>
       <p class="fine-print">Prototype only. Final site should use the club's actual legal/organizational language and verified meeting information.</p>
     </div>
   </footer>
@@ -196,9 +196,10 @@
   <div class="mobile-actions" aria-label="Quick actions">
     <a href="#meetings">Meetings</a>
     <a href="#directions">Directions</a>
-    <a href="tel:+12105550123">Call</a>
+    <a href="#" data-site-link="phone">Call</a>
   </div>
 
+  <script src="site-data.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

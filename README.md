@@ -33,3 +33,29 @@ You can also open `index.html` directly in a browser.
 ## Next steps
 
 This prototype intentionally uses placeholder contact information, address details, event data, and meeting schedules. Before publishing, replace all placeholders with verified club information and confirm the exact organizational/disclaimer language to use in the footer.
+
+## Editing site information
+
+Routine site information lives in **`site-data.js`**. This is the first file to edit when the club's information changes.
+
+For example, the address is defined once:
+
+```js
+address: {
+  street: "123 Example Street",
+  city: "San Antonio",
+  state: "TX",
+  postalCode: "78xxx"
+}
+```
+
+Changing those four values automatically updates every displayed club address as well as the Google Maps and Apple Maps links.
+
+The same applies to the phone number, email address, entrance information, parking information, accessibility note, club name/tagline, and meeting schedule.
+
+### Files
+
+- `site-data.js` — **routine editable content and meeting data**
+- `index.html` — page structure; normally does not need editing for routine information changes
+- `styles.css` — visual design and responsive layout
+- `script.js` — rendering/binding logic; normally does not need editing for routine information changes
