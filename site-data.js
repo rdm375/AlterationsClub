@@ -83,7 +83,7 @@ window.SITE_DATA = {
   meetings: {
     Sunday: [
         { time: "7:00 AM &ndash; 9:00 AM", name: "Want More, Do More Group", type: "Open · Discussion", language: "English" },
-        { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Sunday God Meeting", language: "English" }
+        { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Sunday Night God Meeting", language: "English" }
     ],
     Monday: [
       { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", language: "English" }
