@@ -1,6 +1,6 @@
 # Club Alterations — Website
 
-A lightweight static website for Club Alterations, an independent clubhouse in Pasadena, Texas that provides meeting space for independent Alcoholics Anonymous groups. The site is intentionally written to distinguish the clubhouse from A.A. as an organization and to protect member anonymity.
+A lightweight static website for Club Alterations, an independent clubhouse in Pasadena, Texas that provides meeting space for independent Alcoholics Anonymous groups and other recovery groups. The site is intentionally written to distinguish the clubhouse from A.A. as an organization and to protect member anonymity.
 
 ## Site goals
 

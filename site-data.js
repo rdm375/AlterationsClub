@@ -9,7 +9,7 @@ window.SITE_DATA = {
     name: "Club Alterations",
     shortName: "CA",
     tagline: "Meeting space for recovery & fellowship",
-    description: "Club Alterations is an independent clubhouse in Pasadena, Texas, providing meeting space for independent Alcoholics Anonymous groups."
+    description: "Club Alterations is an independent clubhouse in Pasadena, Texas, providing meeting space for independent Alcoholics Anonymous groups and other recovery groups."
   },
 
   address: {
