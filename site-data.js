@@ -9,7 +9,7 @@ window.SITE_DATA = {
     name: "Club Alterations",
     shortName: "CA",
     tagline: "A home for recovery & fellowship",
-    description: "The Club Alterations provides a comfortable place for Alcoholics Anonymous meetings, fellowship, service, and recovery."
+    description: "Club Alterations provides a comfortable place for Alcoholics Anonymous meetings, fellowship, service, and recovery."
   },
 
   address: {
