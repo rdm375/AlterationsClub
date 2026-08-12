@@ -8,8 +8,8 @@ window.SITE_DATA = {
   club: {
     name: "Club Alterations",
     shortName: "CA",
-    tagline: "A home for recovery & fellowship",
-    description: "Club Alterations provides a comfortable place for Alcoholics Anonymous meetings, fellowship, service, and recovery."
+    tagline: "Meeting space for recovery & fellowship",
+    description: "Club Alterations is an independent clubhouse in Pasadena, Texas, providing meeting space for independent Alcoholics Anonymous groups."
   },
 
   address: {
@@ -38,17 +38,8 @@ window.SITE_DATA = {
 
   resources: {
     otherMeetings: [
-      { label: "Deer Park", url: "https://www.aa-meetings.com/directory/texas/deer-park" },
-      { label: "La Porte", url: "https://www.aa-meetings.com/directory/texas/la-porte" },
-      { label: "Pasadena", url: "https://www.aa-meetings.com/directory/texas/pasadena" },
-      { label: "Baytown", url: "https://www.aa-meetings.com/directory/texas/baytown" },
-      { label: "Channelview", url: "https://www.aa-meetings.com/directory/texas/channelview" },
-      { label: "Pearland", url: "https://www.aa-meetings.com/directory/texas/pearland" },
-      { label: "Webster", url: "https://www.aa-meetings.com/directory/texas/webster" },
-      { label: "Houston", url: "https://www.aa-meetings.com/directory/texas/houston" },
-      { label: "Katy", url: "https://www.aa-meetings.com/directory/texas/katy" },
-      { label: "Missouri City", url: "https://www.aa-meetings.com/directory/texas/missouri-city" },
-      { label: "Cypress", url: "https://www.aa-meetings.com/directory/texas/cypress" }
+      { label: "Houston Intergroup meeting guide", url: "https://aahouston.org/meetings/" },
+      { label: "A.A. Meeting Guide app", url: "https://www.aa.org/meeting-guide-app" }
     ]
   },
 
@@ -91,26 +82,26 @@ window.SITE_DATA = {
 
   meetings: {
     Sunday: [
-        { time: "7:00 AM &ndash; 9:00 AM", name: "Sunday Morning Group", type: "Open · Discussion", chair: "", language: "English" },
-        { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Sunday God Meeting", chair:"Kyren", language: "English" }
+        { time: "7:00 AM &ndash; 9:00 AM", name: "Sunday Morning Group", type: "Open · Discussion", language: "English" },
+        { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Sunday God Meeting", language: "English" }
     ],
     Monday: [
-      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", chair: "Tyler", language: "English" }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", language: "English" }
     ],
     Tuesday: [
-      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", chair: "Sandra", language: "English"  }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", language: "English"  }
     ],
     Wednesday: [
-      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", chair: "Mitch", language: "English"  }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", language: "English"  }
     ],
     Thursday: [
-      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · 12 and 12 Book Study", chair: "Jerry M<sup>c</sup>", language: "English"  }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · 12 and 12 Book Study", language: "English"  }
     ],
     Friday: [
-      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Big Book Study", chair: "Mike J", language: "English"  }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Big Book Study", language: "English"  }
     ],
     Saturday: [
-      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", chair: " ", language: "English" }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", language: "English" }
     ]
   }
 };

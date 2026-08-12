@@ -1,8 +1,8 @@
-# The Alterations Club — Website Prototype
+# Club Alterations — Website
 
-A lightweight static prototype for an Alcoholics Anonymous clubhouse website. The design focuses on legitimacy, clarity, accessibility, meeting discovery, directions, events, and trusted recovery resources.
+A lightweight static website for Club Alterations, an independent clubhouse in Pasadena, Texas that provides meeting space for independent Alcoholics Anonymous groups. The site is intentionally written to distinguish the clubhouse from A.A. as an organization and to protect member anonymity.
 
-## Demo goals
+## Site goals
 
 - Make today's meetings immediately visible.
 - Keep navigation simple for a non-technical audience.
@@ -30,9 +30,13 @@ You can also open `index.html` directly in a browser.
 - `styles.css` — responsive layout and visual design
 - `script.js` — demo meeting data and day filtering
 
-## Next steps
+## Before publishing
 
-This prototype intentionally uses placeholder contact information, address details, event data, and meeting schedules. Before publishing, replace all placeholders with verified club information and confirm the exact organizational/disclaimer language to use in the footer.
+Verify all public club information in `site-data.js`, especially the phone number, email address, meeting schedule, accessibility information, event details, and address. Do not publish member/chair names or other personally identifying information in meeting data.
+
+The SEO files currently use `https://clubalterations-ptx.org/` as the public site URL because the configured contact email uses that domain. If the actual public URL differs, update it in `index.html`, `robots.txt`, and `sitemap.xml` before publishing.
+
+The footer states that Club Alterations is an independent clubhouse and is not operated by or affiliated with Alcoholics Anonymous World Services, Inc. The club should approve its final organizational language.
 
 ## Editing site information
 
@@ -59,3 +63,29 @@ The same applies to the phone number, email address, entrance information, parki
 - `index.html` — page structure; normally does not need editing for routine information changes
 - `styles.css` — visual design and responsive layout
 - `script.js` — rendering/binding logic; normally does not need editing for routine information changes
+
+## SEO and search setup
+
+The site includes:
+
+- descriptive page title and meta description
+- canonical URL
+- Open Graph and Twitter sharing metadata
+- Schema.org `WebSite` and `Place` structured data
+- `robots.txt`
+- `sitemap.xml`
+- official Houston Intergroup and A.A. Meeting Guide links
+
+### Google Search Console
+
+1. Open Google Search Console and add the public site URL as a **URL-prefix property** (or add the whole domain as a Domain property if you control DNS).
+2. If you choose HTML-tag verification, Google will provide a token. In `index.html`, uncomment the `google-site-verification` meta tag and replace `TOKEN` with the exact value Google provides.
+3. Deploy the updated site and click **Verify** in Search Console.
+4. Submit `https://clubalterations-ptx.org/sitemap.xml` in Search Console.
+5. Use URL Inspection to request indexing of the home page after the first deployment.
+
+If the site's real domain is not `clubalterations-ptx.org`, update every SEO URL before submitting the sitemap.
+
+### Anonymity
+
+Meeting chair/member names are intentionally not stored or rendered by this site. Keep public meeting listings limited to information such as group name, time, meeting format/type, and language.
