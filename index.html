@@ -78,7 +78,6 @@
             <p class="eyebrow">Meetings</p>
             <h2>Weekly meeting schedule</h2>
           </div>
-          <p>Meeting details are kept short and clear so they are easy to read on any device.</p>
         </div>
 
         <div class="day-tabs" id="day-tabs" role="tablist" aria-label="Meeting days"></div>
@@ -86,7 +85,7 @@
 
         <div class="info-note">
           <strong>Looking for another meeting?</strong>
-          <p>Use the local A.A. meeting directory or the official Meeting Guide for meetings elsewhere in the area.</p>
+          <div class="nearby-meeting-links" id="nearby-meeting-links"></div>
         </div>
       </div>
     </section>
@@ -98,32 +97,17 @@
             <p class="eyebrow">Community calendar</p>
             <h2>Upcoming events</h2>
           </div>
-          <p>Club-sponsored activities are separated from events hosted elsewhere in the fellowship.</p>
         </div>
 
         <div class="event-columns">
           <div>
             <h3>At The Alterations Club</h3>
-            <article class="event-card">
-              <time datetime="2026-08-15"><span>AUG</span><strong>15</strong></time>
-              <div><h4>Speaker Meeting</h4><p>Saturday · 7:00 PM</p><p>Open meeting. Coffee and fellowship afterward.</p></div>
-            </article>
-            <article class="event-card">
-              <time datetime="2026-08-22"><span>AUG</span><strong>22</strong></time>
-              <div><h4>Birthday Night</h4><p>Saturday · 6:30 PM</p><p>Monthly celebration for sobriety anniversaries.</p></div>
-            </article>
+            <div id="club-events"></div>
           </div>
 
           <div>
             <h3>Around the Fellowship</h3>
-            <article class="event-card muted-card">
-              <time datetime="2026-08-29"><span>AUG</span><strong>29</strong></time>
-              <div><h4>District Workshop</h4><p>Hosted off-site</p><p>Service workshop and fellowship. See organizer details before attending.</p></div>
-            </article>
-            <article class="event-card muted-card">
-              <time datetime="2026-09-12"><span>SEP</span><strong>12</strong></time>
-              <div><h4>Local Club Anniversary</h4><p>Hosted off-site</p><p>Dinner, speaker, and anniversary celebration.</p></div>
-            </article>
+            <div id="community-events"></div>
           </div>
         </div>
       </div>
@@ -188,7 +172,7 @@
   <footer>
     <div class="wrap footer-grid">
       <p><strong data-site="club.name"></strong><br><span>Meeting space for independent Alcoholics Anonymous groups.</span></p>
-      <p class="fine-print">Prototype only. Final site should use the club's actual legal/organizational language and verified meeting information.</p>
+      <!-- p class="fine-print">Prototype only. Final site should use the club's actual legal/organizational language and verified meeting information.</p !-->
     </div>
   </footer>
 

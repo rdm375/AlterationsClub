@@ -128,3 +128,10 @@ footer span, .fine-print { color: #bbc7c1; }
   .resource-card { min-height: 140px; }
   .detail-list div { grid-template-columns: 1fr; gap: 4px; }
 }
+
+.nearby-meeting-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 0.75rem;
+}

@@ -13,60 +13,104 @@ window.SITE_DATA = {
   },
 
   address: {
-    street: "123 Example Street",
-    city: "San Antonio",
+    street: "4313 Red Bluff Rd",
+    city: "Pasadena",
     state: "TX",
-    postalCode: "78xxx"
+    postalCode: "77503"
   },
 
   contact: {
     phoneDisplay: "(210) 555-0123",
     phoneDial: "+12105550123",
-    email: "hello@example.org"
+    email: "hello@TheAlterationsClub-PTX.org"
   },
 
   location: {
-    entranceTitle: "East side of building",
-    entranceNote: "Look for the blue door",
-    entranceDetail: "Enter on the east side through the blue door.",
-    parkingTitle: "Free parking",
-    parkingNote: "Lot behind the clubhouse",
-    parkingDetail: "Use the free lot behind the building.",
-    accessibility: "Step-free entrance and accessible restroom."
+    entranceTitle: "On the Red Bluff side of the building",
+    entranceNote: "",
+    entranceDetail: "On the Red Bluff side of the building",
+    parkingTitle: "We ask that you please not park in front of the other businesses when they're open. Car pool when possible.",
+    parkingNote: "",
+    parkingDetail: "Please avoid parking in front of the other businesses, if they're open.",
+    accessibility: "Ramp on the otherside of the church nextdoor."
+  },
+
+
+  resources: {
+    otherMeetings: [
+      { label: "Deer Park", url: "https://www.aa-meetings.com/directory/texas/deer-park" },
+      { label: "La Porte", url: "https://www.aa-meetings.com/directory/texas/la-porte" },
+      { label: "Pasadena", url: "https://www.aa-meetings.com/directory/texas/pasadena" },
+      { label: "Baytown", url: "https://www.aa-meetings.com/directory/texas/baytown" },
+      { label: "Channelview", url: "https://www.aa-meetings.com/directory/texas/channelview" },
+      { label: "Pearland", url: "https://www.aa-meetings.com/directory/texas/pearland" },
+      { label: "Webster", url: "https://www.aa-meetings.com/directory/texas/webster" },
+      { label: "Houston", url: "https://www.aa-meetings.com/directory/texas/houston" },
+      { label: "Katy", url: "https://www.aa-meetings.com/directory/texas/katy" },
+      { label: "Missouri City", url: "https://www.aa-meetings.com/directory/texas/missouri-city" },
+      { label: "Cypress", url: "https://www.aa-meetings.com/directory/texas/cypress" }
+    ]
+  },
+
+  events: {
+    club: [
+      {
+        date: "2026-08-22",
+        title: "Still Sober Group &mdash; Speak and Eat and Bingo",
+        time: "4:00 PM &ndash; 8:00 PM",
+        description: "Two Tacos with all the fixings and sides for $10."
+      },
+      {
+        recurrence: { frequency: "monthly", ordinal: "last", weekday: "Wednesday" },
+        title: "Still Sober Group &mdash; Birthday Night",
+        time: "7:00 PM &ndash; 8:00 PM",
+        description: "Monthly celebration for sobriety anniversaries."
+      },
+      {
+        recurrence: { frequency: "monthly", ordinal: "last", weekday: "Monday" },
+        title: "Still Sober Group &mdash; Group Conscience Meeting",
+        time: "7:00 PM &ndash; 8:00 PM",
+        description: "Monthly group conscience meeting."
+      }
+    ],
+    community: [
+      {
+        date: "2026-08-29",
+        title: "District Workshop",
+        time: "Hosted off-site",
+        description: "Service workshop and fellowship. See organizer details before attending."
+      },
+      {
+        date: "2026-09-12",
+        title: "Local Club Anniversary",
+        time: "Hosted off-site",
+        description: "Dinner, speaker, and anniversary celebration."
+      }
+    ]
   },
 
   meetings: {
     Sunday: [
-      { time: "9:00 AM", name: "Sunday Morning Group", type: "Open · Discussion", chair: "TBD" },
-      { time: "6:00 PM", name: "Alterations Group", type: "Open · Discussion", chair: "TBD" },
-      { time: "8:00 PM", name: "Last Call", type: "Closed · Discussion", chair: "TBD" }
+        { time: "7:00 AM &ndash; 9:00 AM", name: "Sunday Morning Group", type: "Open · Discussion", chair: "", language: "English" },
+        { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Sunday God Meeting", chair:"Kyren", language: "English" }
     ],
     Monday: [
-      { time: "7:00 AM", name: "Early Birds", type: "Open · Discussion", chair: "TBD" },
-      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", chair: "TBD" },
-      { time: "7:00 PM", name: "Alterations Group", type: "Closed · Literature", chair: "TBD" }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", chair: "", language: "English" }
     ],
     Tuesday: [
-      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", chair: "TBD" },
-      { time: "6:30 PM", name: "New Beginnings", type: "Open · Newcomer", chair: "TBD" }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", chair: "", language: "English"  }
     ],
     Wednesday: [
-      { time: "7:00 AM", name: "Early Birds", type: "Open · Discussion", chair: "TBD" },
-      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", chair: "TBD" },
-      { time: "7:00 PM", name: "Alterations Group", type: "Open · Speaker", chair: "TBD" }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", chair: "Mitch", language: "English"  }
     ],
     Thursday: [
-      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", chair: "TBD" },
-      { time: "7:30 PM", name: "Big Book Study", type: "Closed · Literature", chair: "TBD" }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · 12 and 12 Book Study", chair: "Jerry M<sup>c</sup>", language: "English"  }
     ],
     Friday: [
-      { time: "7:00 AM", name: "Early Birds", type: "Open · Discussion", chair: "TBD" },
-      { time: "12:00 PM", name: "Nooners", type: "Open · Discussion", chair: "TBD" },
-      { time: "8:00 PM", name: "Friday Night Fellowship", type: "Open · Discussion", chair: "TBD" }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Big Book Study", chair: "Mike J", language: "English"  }
     ],
     Saturday: [
-      { time: "10:00 AM", name: "Saturday Solutions", type: "Open · Step Study", chair: "TBD" },
-      { time: "7:00 PM", name: "Saturday Speaker", type: "Open · Speaker", chair: "TBD" }
+      { time: "7:00 PM &ndash; 8:00 PM", name: "Still Sober Group", type: "Open · Discussion", chair: " ", language: "English" }
     ]
   }
 };
